@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+
+"""A script to return the gateway ip address."""
+from typing import Dict
+
+import netifaces
+
+
+def gateway(interface: str) -> str:
+    """To retrun the gateway for an interface."""
+    gws = netifaces.gateways()
+    gws_options = gws[netifaces.AF_INET]
+    gw = [item for item in gws_options if interface in item][0][0]
+    print(gw)
+    return gw
+
+
+if __name__ == '__main__':
+    if 'utun1' in netifaces.interfaces():
+        gateway('utun1')
+    elif 'en1' in netifaces.interfaces():
+        gateway('en1')
+    elif 'en0' in netifaces.interfaces():
+        gateway('en0')
+    else:
+        gateway("lo0")
