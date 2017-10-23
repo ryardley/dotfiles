@@ -1,0 +1,12 @@
+[submodule "3rdParty/mathiasbynens_dotfiles"]
+	path = 3rdParty/mathiasbynens_dotfiles
+	url = git@github.com:mathiasbynens/dotfiles.git
+[submodule "3rdParty/holman_dotfiles"]
+	path = 3rdParty/holman_dotfiles
+	url = git@github.com:holman/dotfiles.git
+[submodule "3rdParty/driesvints_dotfiles"]
+	path = 3rdParty/driesvints_dotfiles
+	url = git@github.com:driesvints/dotfiles.git
+[submodule "3rdParty/ryanb_dotfiles"]
+	path = 3rdParty/ryanb_dotfiles
+	url = git@github.com:ryanb/dotfiles.git
