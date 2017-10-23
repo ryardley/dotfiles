@@ -1,0 +1,14 @@
+# Install and setup the following components for each system in the following order.
+---
+macosx:
+  - shell
+  - zsh
+  - homebrew
+  - xcode
+  - macosx
+  - git
+  - nvm
+  - ruby
+  - vim
+linux:
+  - shell
