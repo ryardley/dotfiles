@@ -8,6 +8,7 @@ tap "homebrew/versions"
 
 # OSX BrewFile
 brew 'ack'
+brew 'gnu-sed'
 brew 'vim', args: ["without-ruby"]
 brew 'imagemagick'
 brew 'unrar'
