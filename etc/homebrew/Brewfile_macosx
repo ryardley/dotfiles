@@ -8,15 +8,11 @@ tap "homebrew/versions"
 
 # OSX BrewFile
 brew 'ack'
-brew 'go'
+brew 'vim', args: ["without-ruby"]
 brew 'imagemagick'
 brew 'unrar'
-brew "antibody"
 brew "autoconf"
 brew "automake"
-brew "bash"
-brew "brew-cask-completion"
-brew "bash-completion2"
 brew "coreutils"
 brew "moreutils"
 brew "findutils"
@@ -29,7 +25,6 @@ brew "direnv"
 brew "dnscrypt-proxy", restart_service: :changed
 brew "dnsmap"
 brew "dnstop"
-brew "fish"
 brew "gcc"
 brew "getdns"
 brew "gibo"
@@ -73,10 +68,4 @@ brew "awscli"
 brew "zsh-completions"
 brew "mas"
 brew "curl"
-brew "bundler-completion"
-brew "docker-completion"
-brew "launchctl-completion"
-brew "rake-completion"
-brew "ruby-completion"
-brew "vagrant-completion"
 brew "trash"
