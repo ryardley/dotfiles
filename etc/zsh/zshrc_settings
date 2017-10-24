@@ -7,3 +7,5 @@ ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
+
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
