@@ -1,0 +1,4 @@
+export EMAIL=jo@example.com
+export FIRSTNAME=Jo
+export LASTNAME=Smith
+export FULLNAME="$FIRST_NAME $LAST_NAME"
