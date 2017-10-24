@@ -3,7 +3,7 @@ require './lib/detect_os.rb'
 
 # Run once off installers for all components listed in the config file
 def install_components
-  puts "Running component installers..."
+
   for component in components_list do
     install_component(component)
   end
@@ -28,7 +28,7 @@ def install_component(component)
 end
 
 def process_zshrc_files(component)
-  puts "No zshrc files to process" if zshrc_files(component).empty?
+  # puts "No zshrc files to process" if zshrc_files(component).empty?
   for file in zshrc_files(component) do
     add_zshrc_files_to_sys_zshrc(file)
   end
@@ -36,14 +36,14 @@ end
 
 # A way to process general purpose scripts.
 def process_script_files(component)
-  puts "No install scripts to run" if script_files(component).empty?
+  # puts "No install scripts to run" if script_files(component).empty?
   for script in script_files(component) do
     run_script(script)
   end
 end
 
 def process_symlink_file(component)
-  puts "No symlink files to link" if symlink_files(component).empty?
+  # puts "No symlink files to link" if symlink_files(component).empty?
   for symlink in symlink_files(component) do
     symlink_file(symlink)
   end
@@ -71,7 +71,7 @@ end
 
 # Symlink files to home directory
 def symlink_file(symlink)
-  puts "Symlink: #{symlink}"
+  puts "Symlinking: #{symlink}"
   pwd = Dir.pwd
   sourse_file = symlink.sub("./","")
   dest_file = symlink.split("/").pop.sub(".symlink", "")
@@ -80,6 +80,7 @@ def symlink_file(symlink)
 end
 
 def add_zshrc_files_to_sys_zshrc(file)
+  puts "Adding #{file} to #{Dir.home}/.zshrc"
   file = file.sub("./","")
   addline = "source #{Dir.pwd}/#{file}\n"
   zshrc_file = "#{Dir.home}/.zshrc"
