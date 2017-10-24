@@ -6,13 +6,13 @@ SCRIPTPATH=`dirname $SCRIPT`
 
 if [ -f ~/.localrc ]; then
   source ~/.localrc
-fi 
+fi
+
+source $SCRIPTPATH/../shell/sources.sh
 
 source $SCRIPTPATH/zshrc_macosx
 
 source $SCRIPTPATH/zshrc_settings
-
-source $SCRIPTPATH/../shell/sources.sh
 
 if $DEBUG = true; then
   echo "Loaded: ZSH Shell: ($SHELL: $ZSH_VERSION)!"
