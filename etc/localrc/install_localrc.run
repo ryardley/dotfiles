@@ -10,3 +10,5 @@ if [ ! -f ~/.localrc ]; then
 else
   echo "!!! File $HOME/.localrc already exists. Doing nothing !!!"
 fi
+
+source $HOME/.localrc

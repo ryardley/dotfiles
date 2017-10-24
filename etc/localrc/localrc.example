@@ -1,4 +1,6 @@
 export EMAIL=jo@example.com
 export FIRSTNAME=Jo
 export LASTNAME=Smith
-export FULLNAME="$FIRST_NAME $LAST_NAME"
+export FULLNAME="$FIRSTNAME $LASTNAME"
+export GITHUB_USERNAME=jojo
+export GITHUB_TOKEN=1233123
