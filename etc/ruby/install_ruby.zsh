@@ -3,12 +3,14 @@
 SCRIPT=`realpath $0`
 SCRIPTPATH=`dirname $SCRIPT`
 
-brew install ruby-install
-brew install chruby
-
-# Downloads to ~/src
-# Install's to ~/.rubies
-ruby-install ruby
-
 source $SCRIPTPATH/ruby.zshrc
-echo $(chruby) > ~/.ruby-version
+
+chruby ruby-2.4
+
+if [ $(which ruby ) = /usr/bin/ruby ]; then
+  ruby-install ruby-2.4
+else
+  echo "Ruby is installed"
+fi
+
+chruby | sed 's/\*//' > ~/.ruby-version
