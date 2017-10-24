@@ -36,5 +36,4 @@ def install_brewfiles
   system("brew bundle -v --file=./etc/homebrew/BrewFile_#{detect_os}")
 end
 
-puts "Installing HomeBrew!!!!"
 install
