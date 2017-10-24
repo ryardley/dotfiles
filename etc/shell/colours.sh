@@ -1,5 +1,5 @@
 if $DEBUG = true; then
-  echo "Loading: Colour's"
+  echo "Loading: LS_COLOUR"
 fi
 
 # After much searching I found this: Ref: https://geoff.greer.fm/lscolors/
