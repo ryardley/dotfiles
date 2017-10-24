@@ -1,0 +1,24 @@
+[core]
+	excludesfile = ~/.gitignore_global
+[user]
+	email = <%= ENV['EMAIL'] %>
+	name = <%= ENV['FULLNAME'] %>
+[alias]
+	s = status
+	a = add
+	c = commit
+	o = checkout
+	p = pull
+	ps = push
+	f = fetch
+	l = log
+	r = remote -v
+	b = branch -vva
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[github]
+	user = <%= ENV['GITHUB_USERNAME'] %>
+	token = <%= ENV['GITHUB_TOKEN'] %>
