@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 brew install -v zsh
 brew install -v zsh-autosuggestions

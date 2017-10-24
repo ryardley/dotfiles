@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 brew install -v yarn  --without-node
 brew install -v nvm

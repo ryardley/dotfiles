@@ -86,5 +86,6 @@ end
 
 # Return Array of *.run files in component directory (Should only be one. However there is nothing stop there being more. )
 def script_files(component)
-  Dir["./etc/#{component}/*.run"]
+  Dir["./etc/#{component}/install_#{component}.zsh"] +
+  Dir["./etc/#{component}/install_#{component}*.rb"] 
 end
