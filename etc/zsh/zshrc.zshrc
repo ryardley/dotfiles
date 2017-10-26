@@ -16,12 +16,10 @@ fi
 
 source $SCRIPTPATH/zshrc_macosx
 
-source $SCRIPTPATH/zshrc_settings
+source $SCRIPTPATH/zshrc_options
 
 source $SCRIPTPATH/../shell/sources.sh
 
 if $DEBUG = true; then
   echo "Loaded: ZSH Shell: ($SHELL: $ZSH_VERSION)!"
 fi
-
-echo "Welcome $FIRSTNAME, your environment has loaded."
