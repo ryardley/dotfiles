@@ -1,5 +1,6 @@
+#!/usr/bin/env zsh
 if $DEBUG = true; then
-  echo "Loading: NVM"
+  echo "Loading: Node"
 fi
 
 # NVM
@@ -8,14 +9,14 @@ fi
 # fi
 
 # Total Hack's to get around prefromance issue with nvm on shell startup.
-nvm() {
-  if [ -f /usr/local/opt/nvm/nvm.sh ]; then
-      source /usr/local/opt/nvm/nvm.sh
-  fi
-}
+# nvm() {
+#   if [ -f /usr/local/opt/nvm/nvm.sh ]; then
+#       source /usr/local/opt/nvm/nvm.sh
+#   fi
+# }
 
 # NVM
-export NVM_DIR="$HOME/.nvm"
+# export NVM_DIR="$HOME/.nvm"
 
 # For project/local node modules installs
 export PATH="node_modules/.bin:$PATH"
