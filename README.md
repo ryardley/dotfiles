@@ -18,7 +18,7 @@ The primary goal of this project is to be able to setup OSX dev systems and linu
 - Remote/Quick starter install option
 - Installation detects for OSX Dev System or Linux servers.
 - Modular drop-in type setup
-- Update feature
+- Update feature / Sync feature
 
 ## Reference Projects:
 
@@ -78,3 +78,14 @@ The component installation and setup works via the use of special files postfixe
 - **install_[component_name].[rb|zsh]** is used to run any commands required to install the given component and any other part of its eco-system
 - **[component_name].zshrc** is used to store any shell configurations that are required. These files are then added to the users `~/.zshrc` to be sourced on every shell startup
 - **[component_name].symlink** is used to create a symlink to the users home directory in the form of: `~/.[component_name]`
+- **[component_name].erb** is used to create template file that can then use environment variables such as GIT_USERNAME, etc. Refer to the `./etc/localrc/localrc-example` for more information.
+
+## Configurations
+
+### `./config.yml`
+
+To configure what components get installed and in what order please see the `config.yml` file. This file is split in up my system types. However note that only OSX is currently working and supported. Same tuned to linux support soon.
+
+### `./localrc`
+
+As part of the installation a `~/.localrc` is created once off. This file is designed to keep personal type of environment variables such as usernames, tokens, etc that can then be used in
