@@ -12,7 +12,7 @@ alias la="ls -alFG"
 alias gst='git status'
 alias gl='git pull'
 alias gp='git push'
-#alias gd='git diff | atom'
+alias gd='git diff | atom'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
 alias gb='git branch'
@@ -30,6 +30,8 @@ alias dshell='zsh -i -c -x exit'
 
 alias e='atom'
 
+## Networking
+
 # Mac address changes
 alias gmac="openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'"
 alias cmac="sudo ifconfig en0 ether `gmac`"
@@ -44,6 +46,11 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
+# Open posts
+alias ports_lsof="sudo lsof -PiTCP -sTCP:LISTEN"
+alias ports_netstat='netstat -ap tcp | grep -i "listen"'
+
+## Finder
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
