@@ -43,6 +43,7 @@ This project exists to help me in the management of my dotfiles config across OS
 # User cases
 
 1. Users set's up a new osx dev machine from an existing dofiles project.
+2. Keep multiple system's in sync and updating an upstream repo with changes as needed 3.
 
 ## Proposed usage
 
