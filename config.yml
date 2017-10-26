@@ -1,14 +1,18 @@
 # Install and setup the following components for each system in the following order.
 ---
 macosx:
-  - shell
+  - dotfiles # Base setup.
+  - localrc
   - zsh
-  - homebrew
-  - xcode
-  - macosx
-  - git
-  - nvm
-  - ruby
-  - vim
-linux:
+  # - test
   - shell
+  - git
+  - homebrew
+  - vim
+  - macosx
+  - xcode
+  - node
+  - ruby
+
+linux:
+  
