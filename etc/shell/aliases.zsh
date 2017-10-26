@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 if $DEBUG = true; then
   echo "Loading: ALIASE's"
 fi

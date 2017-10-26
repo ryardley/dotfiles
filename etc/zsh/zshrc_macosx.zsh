@@ -5,7 +5,6 @@
 SCRIPT=`realpath $0`
 SCRIPTPATH=`dirname $SCRIPT`
 
-
 # GRC
 if $DEBUG = true; then
   echo "Loading: GRC"

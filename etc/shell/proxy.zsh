@@ -1,6 +1,8 @@
+#!/usr/bin/env zsh
+
 if $DEBUG = true; then
   echo "Loading: PROXY"
-fi 
+fi
 
 #echo Setting up: HTTP/ALL_PROXY...
 #export http_proxy=http://127.0.0.1:8888
