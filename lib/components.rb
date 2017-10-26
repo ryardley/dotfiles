@@ -8,11 +8,12 @@ require './lib/detect_os.rb'
 # *.run => Run custom install script
 # *.smylink => file get's symlinked to $HOME
 # *.zshrc => get source into system .zshrc file
-def install_components
+def install_components(options = {})
+  puts "Options: #{options}" if ENV['DEBUG']
   for component in components_list do
     puts "Installing component: #{component}"
     process_zshrc_files(component)
-    process_script_files(component)
+    process_script_files(component, options)
     process_symlink_files(component)
     process_erb_files(component)
   end
@@ -39,16 +40,16 @@ def process_zshrc_files(component)
 end
 
 # A way to process general purpose scripts.
-def process_script_files(component)
+def process_script_files(component, options = {})
   for script in script_files(component) do
-    # puts "Running custom install script: #{script}"
-    system(script)
+    puts "Running install script: #{script.split("/").last}"
+    system(script, options.to_s)
   end
 end
 
 def process_symlink_files(component)
   for symlink in symlink_files(component) do
-    # puts "Symlinking: #{symlink}"
+    puts "Symlinking: #{symlink}" if ENV['DEBUG']
     pwd = Dir.pwd
     sourse_file = symlink.sub("./","")
     dest_file = symlink.split("/").pop.sub(".symlink", "")
@@ -63,9 +64,9 @@ def process_erb_files(component)
     dest = "#{ENV['HOME']}/.gitconfig"
 
     if File.exist?(dest)
-      # puts "File: #{dest} exists. Doing nothing. "
+      puts "File: #{dest} exists. Doing nothing. "
     else
-      # puts "Writing file: #{dest}"
+      puts "Writing file: #{dest}" if ENV['DEBUG']
       File.write(dest, file_data) unless File.exist?(dest)
     end
   end
