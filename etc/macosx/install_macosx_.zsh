@@ -5,7 +5,7 @@ SCRIPTPATH=`dirname $SCRIPT`
 
 # Thanks to Mathias Bynens! https://mths.be/macos
 
-# TODO: Break this file into its parts. 
+# TODO: Break this file into its parts.
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -664,7 +664,7 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 defaults write com.apple.Terminal ShowLineMarks -int 0
 
 # Install the Solarized Dark theme for iTerm
-open "etc/macosx/Solarized Dark.itermcolors"
+# open "etc/macosx/Solarized Dark.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
