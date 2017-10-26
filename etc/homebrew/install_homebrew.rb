@@ -1,39 +1,63 @@
 #!/usr/bin/env ruby
 require "./lib/detect_os.rb"
 
-def install
+def install(options = {})
+  opts = eval options.first
+
+  brewcask_option = opts[:brewcask]
+  brewmas_option = opts[:brewmas]
+  brew_verbose_option = opts[:brew_verbose]
+
   install_homebrew if detect_os == :macosx
-  install_brewfiles if detect_os == :macosx # Std brew apps
-  install_brewcasks_apps if detect_os == :macosx # Brew cask
-  install_brewmas_apps if detect_os == :macosx # brew mas apps (app store, i.e xcode)
+  install_brewfiles_apps if detect_os == :macosx # Std brew apps
+  install_brewcasks_apps(brewcask_option) if detect_os == :macosx # Brew cask
+  install_brewmas_apps(brewmas_option) if detect_os == :macosx # brew mas apps (app store, i.e xcode)
 end
 
-def install_brewmas_apps
-  print "Would you like to install mas apps (mac app store apps) (Y/n)?"
-  results = gets
-  return unless results.match(/y/i) or results == "\n"
+def install_brewmas_apps(brewmas_option)
+  case brewmas_option
+  when nil
+    print "Would you like to install mas apps (mac app store apps) (Y/n)?"
+    results = STDIN.gets
+    return unless results.match(/y/i) or results == "\n"
+  when false
+    return
+  end
+
   puts "Installing mas apps now..."
   system('brew tap homebrew/bundle')
-  system("brew bundle -v --file=./etc/homebrew/Brewmas_macosx")
+  system("brew bundle --file=./etc/homebrew/Brewmas_macosx")
 end
 
-def install_brewcasks_apps
-  print "Would you like to install gui/dev apps (Y/n)?"
-  results = gets
-  return unless results.match(/y/i) or results == "\n"
+def install_brewcasks_apps(brewcask_option)
+  case brewcask_option
+  when nil
+    print "Would you like to install gui/dev apps (Y/n)?"
+    results = STDIN.gets
+    return unless results.match(/y/i) or results == "\n"
+  when false
+    return
+  end
+
   puts "Installing BrewCask's now..."
   system('brew tap homebrew/bundle')
-  system("brew bundle -v --file=./etc/homebrew/Brewcask_#{detect_os}")
+  system("brew bundle --file=./etc/homebrew/Brewcask_#{detect_os}")
 end
 
 def install_homebrew
-  system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
+  brew = `which brew`.chomp
+
+  if brew
+    puts "!!! Homebrew already installed. Doing nothing !!!"
+  else
+    system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
+  end
 end
 
-def install_brewfiles
+def install_brewfiles_apps
   puts "Installing BrewFile now..."
   system('brew tap homebrew/bundle')
-  system("brew bundle -v --file=./etc/homebrew/BrewFile_#{detect_os}")
+  system("brew bundle --file=./etc/homebrew/BrewFile_#{detect_os}")
 end
 
-install
+install(ARGV)
