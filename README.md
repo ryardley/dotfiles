@@ -51,6 +51,14 @@ cd ~/.dotfiles
 
 Once installed on your local system you will need to be in the root of the repository. All commands are executed via the Ruby rake task system.
 
+**Please review before installing**
+
+1. This system works in a non-destructive way as much as possible. If any of the erb files that get processed or symlinked in the users home directory already exist this system will continue without making any changes. The only other dotfile that is modified is the `~/.zshrc` file components `*.zshrc` files are added to be sourced on shell startup.
+
+2. Many homebrew files will be installed as part of the default setup, so do make sure you review the `./etc/homebrew/brew*` to understand what is going to be installed as part of the base setup here.
+
+3. As part of this setup there is a component `./etc/macosx/install_macosx.zsh` that makes a lot of changes to the default setting of osx to optimise the system as much as possible. It is highly recommended that you review this file in detail before running as it may have unexpected efforts.
+
 ### Installation
 
 To install on a fresh system run the following command. This will ask you questions where required about any setup tasks that need input. Such as the installing of extra BrewCask or BrewMas apps.
