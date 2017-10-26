@@ -1,28 +1,28 @@
-# My Dotfile Management System
+# Dotfile/Environment Management System
 
 ## Why this exists
 
-This project exists to help me in the management of my dotfiles config across OSX dev systems and linux server systems.
+This project exists to help in the process of environment management of dotfiles config files for ZSH, Ruby, Python, Node, VIM, etc. As well as the installation and setup of extra osx command line and gui apps such as docter, iterm2, etc via the homebrew, brewfile, brewCask and BrewMas system.
 
-**Please note this project is very much a work in progress and is only really just getting started. Currently this projects is not ready for an form of public consumption!**
+This project is designed around the idea of being able to have drop in components that automatically run the special files to install and setup whatever is require for that component.
 
-## Why I really need this
+The primary goal of this project is to be able to setup OSX dev systems and linux servers in a zero-to-hero, quick and consistent way.
 
-- Get new systems up and running quickly and consistently for myself and other developers that work with me.
-- To install on either osx dev systems or linux servers and to have my opinionated configurations follow me around.
+**Please note this project is very much a work in progress and is only really just getting started. Currently this projects is not ready for public consumption!**
 
 ## High Level Project Goals
 
-- Simple and easy to use and understand and extend
+- Simple easy to use, understand and extend
 - OSX and Linux compatible
 - Install via standard systems commands/scripts/dev env
-- Built with no install dependencies
 - Remote/Quick starter install option
 - Installation detects for OSX Dev System or Linux servers.
 - Modular drop-in type setup
 - Update feature
 
-# Reference Projects:
+## Reference Projects:
+
+In the making of this project I have used a combination of the following resources:
 
 - <https://github.com/holman/dotfiles>
 
@@ -34,22 +34,47 @@ This project exists to help me in the management of my dotfiles config across OS
 
 - <https://github.com/ryanb/dotfiles>
 
-# Reference articles:
+## Reference articles:
 
 - <https://github.com/webpro/awesome-dotfiles> -
 
-## Roadmap
+# Getting started
 
-# User cases
+To get started using this project you will need to fork the repository and clone it to your local system as follows:
 
-1. Users set's up a new osx dev machine from an existing dofiles project.
-2. Keep multiple system's in sync and updating an upstream repo with changes as needed 3.
+```
+git clone git@github.com:[YOUR_GIT_USERNAME]/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+```
 
-## Proposed usage
+## Usage
 
-1. Remote web installer
-2. git fork > git clone > rake bootstrap
+Once installed on your local system you will need to be in the root of the repository. All commands are executed via the Ruby rake task system.
 
-# Components
+### Installation
 
-After the base system is setup, everything is then setup around the idea of components. I.e node and its eco-system is a component, Ruby and its eco-system a component, Zsh and its eco-system is a component, etc.
+To install on a fresh system run the following command. This will ask you questions where required about any setup tasks that need input. Such as the installing of extra BrewCask or BrewMas apps.
+
+`rake install`
+
+To install all BrewCask and BrewMas apps without any questions run the following task:
+
+`rake install:all`
+
+To install only shell/command line apps and components run the following task:
+
+`rake install:shell`
+
+## Components
+
+As stated, this project is designed around the idea of being able to have drop in components that automatically run the given special files to install and setup whatever is require for that component.
+
+A components is anything like node and its eco-system, Ruby and its eco-system, Zsh and its eco-system, etc.
+
+All components are located in the `./etc` directory within the repository. Have a look in here for working examples.
+
+The component installation and setup works via the use of special files postfixes as follows:
+
+- **install_[component_name].[rb|zsh]** is used to run any commands required to install the given component and any other part of its eco-system
+- **[component_name].zshrc** is used to store any shell configurations that are required. These files are then added to the users `~/.zshrc` to be sourced on every shell startup
+- **[component_name].symlink** is used to create a symlink to the users home directory in the form of: `~/.[component_name]`
