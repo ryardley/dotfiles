@@ -2,3 +2,4 @@ sandpit
 .DS_Store
 cache
 tmp
+etc/test
