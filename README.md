@@ -4,7 +4,7 @@
 
 This project exists to help me in the management of my dotfiles config across OSX dev systems and linux server systems.
 
-**Please note this project is very much a work in progress and is only really just getting started. Currently this projects is not ready for an form of public consumption!**
+**Please note this project is very much a work in progress and is only really just getting started. Currently this projects is not ready for public consumption!**
 
 ## Why I really need this
 
@@ -13,10 +13,9 @@ This project exists to help me in the management of my dotfiles config across OS
 
 ## High Level Project Goals
 
-- Simple and easy to use and understand and extend
+- Simple and easy to use, understand and extend
 - OSX and Linux compatible
 - Install via standard systems commands/scripts/dev env
-- Built with no install dependencies
 - Remote/Quick starter install option
 - Installation detects for OSX Dev System or Linux servers.
 - Modular drop-in type setup
@@ -43,11 +42,12 @@ This project exists to help me in the management of my dotfiles config across OS
 # User cases
 
 1. Users set's up a new osx dev machine from an existing dofiles project.
-2. Keep multiple system's in sync and updating an upstream repo with changes as needed 3.
+2. Update an existing dotfiles setup with the upstream repo
 
 ## Proposed usage
 
 1. Remote web installer
+
 2. git fork > git clone > rake bootstrap
 
 # Components
