@@ -9,7 +9,8 @@ tap "homebrew/versions"
 # OSX BrewFile
 brew 'ack'
 brew 'gnu-sed'
-brew 'vim', args: ["without-ruby"]
+brew 'ruby'
+brew 'vim'
 brew 'imagemagick'
 brew 'unrar'
 brew "autoconf"
@@ -19,7 +20,6 @@ brew "moreutils"
 brew "findutils"
 brew "wifi-password"
 brew "bzip2"
-brew "chruby"
 brew "cmake"
 brew "ddrescue"
 brew "direnv"
@@ -27,7 +27,6 @@ brew "dnscrypt-proxy", restart_service: :changed
 brew "dnsmap"
 brew "dnstop"
 brew "gcc"
-brew "getdns"
 brew "gibo"
 brew "git"
 brew "git-extras"
@@ -62,11 +61,18 @@ brew "watchman"
 brew "wget"
 brew "whois"
 brew "wireshark"
-brew "yarn", args: ["without-node"]
-brew "nvm"
-brew "zsh"
+brew 'node'
+brew "yarn"
 brew "awscli"
-brew "zsh-completions"
 brew "mas"
 brew "curl"
 brew "trash"
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-lovers"
+brew "zsh-navigation-tools"
+brew "zsh-syntax-highlighting"
+brew "zsh-history-substring-search"
+brew "liquidprompt"
+brew "z"
