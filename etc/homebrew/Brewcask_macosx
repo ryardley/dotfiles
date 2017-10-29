@@ -75,7 +75,6 @@ cask "vagrant"
 cask "vagrant-manager"
 cask 'torbrowser'
 cask "anyipsum"
-cask 'tunnelbear'
 cask 'transmission'
 cask 'aerial'
 cask 'insomnia'
