@@ -78,9 +78,9 @@ alias vrebuild="vagrant destroy --force && vagrant up"
 
 # Navigation
 alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
+alias ....="cd ../.."
+alias ......="cd ../../.."
+alias ........="cd ../../../.."
 
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
