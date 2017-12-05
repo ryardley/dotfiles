@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 if $DEBUG = true; then
   echo "Loading: ALIASE's"
 fi
@@ -27,8 +29,6 @@ alias p='ping -c 10 google.com.au'
 # Testing shell load speeds
 alias tshell='for i in $(seq 1 10); do /usr/bin/time zsh -i -c exit; done'
 alias dshell='zsh -i -c -x exit'
-
-alias e='atom'
 
 ## Networking
 
@@ -78,9 +78,9 @@ alias vrebuild="vagrant destroy --force && vagrant up"
 
 # Navigation
 alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
+alias ....="cd ../.."
+alias ......="cd ../../.."
+alias ........="cd ../../../.."
 
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
@@ -93,3 +93,12 @@ alias week='date +%V'
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Osx desktop stuff
+alias desktop_image_location_show='defaults write com.apple.dock desktop-picture-show-debug-text -bool TRUE;killall Dock'
+alias desktop_image_location_hide='defaults delete com.apple.dock desktop-picture-show-debug-text;killall Dock'
+
+# Vim
+alias vi='vim'
+alias v='vim'
+alias e='vim'

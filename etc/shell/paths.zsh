@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 SCRIPT=`realpath $0`
 SCRIPTPATH=`dirname $SCRIPT`
 

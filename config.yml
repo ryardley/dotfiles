@@ -4,7 +4,7 @@ macosx:
   - dotfiles # Base setup.
   - localrc
   - zsh
-  # - test
+  # # - test
   - shell
   - git
   - homebrew
@@ -15,4 +15,3 @@ macosx:
   - ruby
 
 linux:
-  
