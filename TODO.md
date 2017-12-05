@@ -20,3 +20,5 @@
 9. zsh case in-sentive and sub section completions
 10. Completions.
 11. Iterm titles
+
+Testing recent update change!
