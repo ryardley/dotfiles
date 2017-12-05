@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
 
+touch ~/.zshrc
 sudo dscl . -create /Users/$USER UserShell `which zsh`
-echo "Shell set to: `dscl . -read /Users/$USER UserShell`"
+echo "Set Shell to: `dscl . -read /Users/$USER UserShell`"
