@@ -23,3 +23,6 @@ source $SCRIPTPATH/../shell/sources.zsh
 if $DEBUG = true; then
   echo "Loaded: ZSH Shell: ($SHELL: $ZSH_VERSION)!"
 fi
+
+source $SCRIPTPATH/../bin/dotfiles_status.zsh
+source $SCRIPTPATH/../bin/dotfiles_update.zsh

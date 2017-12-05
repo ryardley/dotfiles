@@ -9,9 +9,8 @@ require './lib/detect_os.rb'
 # *.smylink => file get's symlinked to $HOME
 # *.zshrc => get source into system .zshrc file
 def install_components(options = {})
-  puts "Options: #{options}" if ENV['DEBUG']
   for component in components_list do
-    puts "Installing component: #{component}"
+    puts "Running component installation: #{component}"
     process_zshrc_files(component)
     process_script_files(component, options)
     process_symlink_files(component)
@@ -48,7 +47,7 @@ def process_script_files(component, options = {})
 end
 
 def process_symlink_files(component)
-  for symlink in symlink_files(component) do    
+  for symlink in symlink_files(component) do
     sourse_file = Dir.pwd + "/" + symlink.sub("./","")
     dest_file = ENV['HOME'] + "/." + symlink.split("/").pop.sub(".symlink", "")
 
