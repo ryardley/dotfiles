@@ -79,3 +79,4 @@ brew "liquidprompt"
 brew "z"
 brew 'ncrack'
 brew "lynx"
+brew "youtube-dl"
