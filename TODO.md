@@ -20,5 +20,3 @@
 9. zsh case in-sentive and sub section completions
 10. Completions.
 11. Iterm titles
-
-Removing edit's for another edit! Testing the update checker im building. 
