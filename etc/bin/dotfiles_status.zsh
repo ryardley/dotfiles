@@ -17,9 +17,25 @@ if [ $STATUS ]; then
 
   # Create a dirty marker
   export DIRTY=true
+  return
 else
-  # Remove the dirty marker
+  # Not dirty
   export DIRTY=false
 fi
+
+PUSHED=`git status | grep "Your branch is ahead of"`
+
+if [ $PUSHED ]; then
+  echo "***************************** GIT PUSH *******************************"
+  echo "!!      WARNING: You have yet to push your local changes up.        !!"
+  echo "!!     Please push and contribute your changes back to upstream     !!"
+  echo "!!                            Thank you                             !!"
+  echo "**********************************************************************"
+  echo
+fi
+
+
+
+
 cd - > /dev/null
 
