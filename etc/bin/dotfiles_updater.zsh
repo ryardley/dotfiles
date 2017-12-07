@@ -11,7 +11,7 @@ if [ ! -f $SCRIPTPATH/../../var/$DATE_STAMP ]; then
 
   echo "********************** RUNNING DOTFILES UPDATER **********************"
 
-  if [ $DIRTY -eq true ]; then
+  if [ $DIRTY = 'true' ]; then
     echo "!! WARNING: uncommited files in local .dotfile repo                  !!"
     echo "!! Please commit and push for daily .dotfiles updater to run         !!"
     echo "***********************************************************************"
