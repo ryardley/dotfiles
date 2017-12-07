@@ -29,7 +29,6 @@ if [ ! -f $SCRIPTPATH/../../var/$DATE_STAMP ]; then
   if [ $UPDATES -gt 0 ]; then
     echo "!!    UPDATES AVAILABLE: Updates available in the upstream repo     !!"
     # TODO: Add updater
-    echo "!! Would you like to update now?                                    !!"
   else
     echo "!!                  No .dofiles updates available                  !!"
   fi
