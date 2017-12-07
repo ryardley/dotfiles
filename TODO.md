@@ -21,4 +21,4 @@
 10. Completions.
 11. Iterm titles
 
-Testing recent update change!
+Removing edit's for another edit! Testing the update checker im building. 
