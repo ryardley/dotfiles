@@ -27,8 +27,12 @@ if [ ! -f $SCRIPTPATH/../../var/$DATE_STAMP ]; then
   UPDATES=`git fetch --dry-run upstream |& wc -w`
 
   if [ $UPDATES -gt 0 ]; then
-    echo "!!    UPDATES AVAILABLE: Updates available in the upstream repo     !!"
+    echo "!!    UPDATES AVAILABLE: Updates available in the upstream repo    !!"
     # TODO: Add updater
+    echo "!!    UPDATING NOW:                                                !!"
+    git pull upstream develop
+    git push origin develop
+    echo "!!                      UPDATES COMPLETE                           !!"
   else
     echo "!!                  No .dofiles updates available                  !!"
   fi
