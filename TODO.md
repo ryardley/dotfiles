@@ -4,7 +4,6 @@
 
 1. **Ask for localrc initial settings**
 2. deal with long running sudo
-3. Report zsh: permission denied: ./etc/test/install_test.zsh for script without +x
 
 # ShellBugs
 
@@ -20,3 +19,5 @@
 9. zsh case in-sentive and sub section completions
 10. Completions.
 11. Iterm titles
+12. logging
+13. Versioning
