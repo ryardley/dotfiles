@@ -11,7 +11,7 @@ if [ ! -f $SCRIPTPATH/../../var/$DATE_STAMP ]; then
 
   echo "********************** RUNNING DOTFILES UPDATER **********************"
 
-  if [ $DIRTY ]; then
+  if [ $DIRTY = 'true' ]; then
     echo "!! WARNING: uncommited files in local .dotfile repo                  !!"
     echo "!! Please commit and push for daily .dotfiles updater to run         !!"
     echo "***********************************************************************"
@@ -29,7 +29,6 @@ if [ ! -f $SCRIPTPATH/../../var/$DATE_STAMP ]; then
   if [ $UPDATES -gt 0 ]; then
     echo "!!    UPDATES AVAILABLE: Updates available in the upstream repo     !!"
     # TODO: Add updater
-    echo "!! Would you like to update now?                                    !!"
   else
     echo "!!                  No .dofiles updates available                  !!"
   fi

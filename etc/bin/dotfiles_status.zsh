@@ -34,8 +34,5 @@ if [ $PUSHED ]; then
   echo
 fi
 
-
-
-
 cd - > /dev/null
 
