@@ -30,10 +30,11 @@ if [ ! -f $SCRIPTPATH/../../var/$DATE_STAMP ]; then
   echo "***********************************************************************"
   echo
 
+  # TODO: Add a clean up step. Fixed it for first run with empty dir.
   # Remove old date stamps
-  rm $SCRIPTPATH/../../var/*
+  # rm $SCRIPTPATH/../../var/* 2&>1
 
   # Create a new date stamp for today
-  # touch $SCRIPTPATH/../../var/$DATE_STAMP
+  touch $SCRIPTPATH/../../var/$DATE_STAMP
   cd - > /dev/null
 fi

@@ -16,11 +16,9 @@ if [ $STATUS ]; then
   echo
 
   # Create a dirty marker
-  touch $SCRIPTPATH/../../var/DIRTY_REPO
   export DIRTY=true
 else
   # Remove the dirty marker
-  rm $SCRIPTPATH/../../var/DIRTY_REPO
   export DIRTY=false
 fi
 cd - > /dev/null
