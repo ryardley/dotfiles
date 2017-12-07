@@ -9,3 +9,4 @@ fi
 
 # Add dotfiles ../bin to path.
 export PATH=$SCRIPTPATH/../bin:${PATH}
+export DOTFILES=`echo $SCRIPTPATH | sed 's/\/etc\/shell//'`
