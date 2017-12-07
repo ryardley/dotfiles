@@ -9,7 +9,7 @@ STATUS=`git status -s`
 
 if [ $STATUS ]; then
   echo "********************** RUNNING LOCAL STATUS CHECKER ******************"
-  echo "!! WARNING: You have uncommited files in your local .dotfiles repo. !!"
+  echo "!!  WARNING: You have unsynced files in your local .dotfiles repo.  !!"
   echo "!!   Please commit and contribute your changes back to upstream     !!"
   echo "!!                            Thank you                             !!"
   echo "**********************************************************************"
