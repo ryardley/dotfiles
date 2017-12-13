@@ -21,6 +21,10 @@ task :uninstall do
   system('sudo dscl . -create /Users/$USER UserShell `which bash`')
 end
 
+task :install do
+  Rake::Task["install:all"].invoke
+end
+
 
 namespace :install do
   desc "Install all the dofiles magic, brewcask and brewmas will be installed without question"
