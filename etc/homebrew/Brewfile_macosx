@@ -106,7 +106,7 @@ brew "sqlmap"
 brew "tcpflow"
 brew "tcpreplay"
 brew "tcptrace"
-brew "ucspi-tcp # `tcpserver` etc."
+# brew "ucspi-tcp # `tcpserver` etc." # TODO: Looks like this has been removed from brew. TBC
 brew "xpdf"
 brew "xz"
 brew "minisign"
