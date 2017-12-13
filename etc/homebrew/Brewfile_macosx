@@ -86,7 +86,7 @@ brew "figlet"
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew "aircrack-ng"
-brew "bfg"
+# brew "bfg" # TODO: this needs to be installed after java which is a cask!
 brew "binutils"
 brew "binwalk"
 brew "cifer"
