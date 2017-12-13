@@ -15,6 +15,13 @@ task :default do
   end
 end
 
+task :uninstall do
+  system('rm -rf ~/.zshrc')
+  system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall')
+")
+end
+
+
 namespace :install do
   desc "Install all the dofiles magic, brewcask and brewmas will be installed without question"
   task :all do
