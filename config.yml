@@ -1,8 +1,8 @@
 # Install and setup the following components for each system in the following order.
 ---
 macosx:
-  - homebrew # This need's to run first due to cmd dependency
   - dotfiles
+  - homebrew # This need's to run first due to cmd dependency
   - localrc
   - zsh
   - shell

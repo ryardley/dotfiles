@@ -40,9 +40,10 @@ In the making of this project I have used a combination of the following resourc
 
 # Getting started
 
-To get started using this project you will need to fork the repository and clone it to your local system as follows:
+To get started using this project on a fresh install of osx you will need to fork the repository, install xcode command line tools and clone the repository to your local system as follows:
 
 ```
+xcode-select --install #Click yes to download and install the tools, then continue
 git clone git@github.com:[YOUR_GIT_USERNAME]/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
