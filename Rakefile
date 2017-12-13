@@ -17,8 +17,7 @@ end
 
 task :uninstall do
   system('rm -rf ~/.zshrc')
-  system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall')
-")
+  system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)")'
 end
 
 
