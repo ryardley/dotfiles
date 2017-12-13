@@ -110,4 +110,4 @@ brew "tcptrace"
 # brew "xpdf" # TODO: this needs to be installed after quartz
 brew "xz"
 brew "minisign"
-brew "dnscrypt-proxy", restart_service: :changed
+# brew "dnscrypt-proxy", restart_service: :changed # TODO: this is still failing the install process even with minisign being installed for it.
