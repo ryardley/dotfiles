@@ -9,7 +9,8 @@ fi
 # Ask for the administrator password upfront
 sudo -v
 
-# source ./etc/dotfiles/sudo_keep-alive.zsh &
+# create tmp folder
+mkdir ../var
 
 # initialise zshrc
 touch ~/.zshrc
