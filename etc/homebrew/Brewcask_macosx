@@ -3,7 +3,6 @@
 tap "caskroom/cask"
 
 cask 'java'
-cask 'caskroom/versions/java8'
 cask "1password"
 cask "alfred"
 #cask "android-sdk" # TODO: Keeps failing to install on fresh system
