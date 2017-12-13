@@ -6,8 +6,8 @@ if [ ! $UPSTREAM ]; then
   echo "Added upstream repo locally"
 fi
 
-#say "Please enter your super user password?"
 # Ask for the administrator password upfront
+say "Please enter your admin password?"
 sudo -v
 
 # source ./etc/dotfiles/sudo_keep-alive.zsh &
