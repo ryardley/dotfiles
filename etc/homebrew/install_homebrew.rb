@@ -12,6 +12,7 @@ def install(options = {})
   install_brewfiles_apps if detect_os == :macosx # Std brew apps
   install_brewcasks_apps(brewcask_option) if detect_os == :macosx # Brew cask
   # install_brewmas_apps(brewmas_option) if detect_os == :macosx # brew mas apps (app store, i.e xcode)
+  system('brew cleanup')
 end
 
 def install_brewmas_apps(brewmas_option)
