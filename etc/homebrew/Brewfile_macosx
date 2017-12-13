@@ -107,7 +107,7 @@ brew "tcpflow"
 brew "tcpreplay"
 brew "tcptrace"
 # brew "ucspi-tcp # `tcpserver` etc." # TODO: Looks like this has been removed from brew. TBC
-brew "xpdf"
+# brew "xpdf" # TODO: this needs to be installed after quartz
 brew "xz"
 brew "minisign"
 brew "dnscrypt-proxy", restart_service: :changed
