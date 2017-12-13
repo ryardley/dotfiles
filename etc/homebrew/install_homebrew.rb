@@ -47,7 +47,7 @@ end
 def install_homebrew
   brew = `which brew`.chomp
 
-  if brew
+  if !brew.empty?
     puts "!!! Homebrew already installed. Doing nothing !!!"
   else
     system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
