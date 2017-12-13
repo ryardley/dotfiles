@@ -21,3 +21,4 @@
 11. Iterm titles
 12. logging
 13. Versioning
+14. Personal config setting imprt
