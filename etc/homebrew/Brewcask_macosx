@@ -2,6 +2,8 @@
 
 tap "caskroom/cask"
 
+cask 'java'
+cask 'caskroom/versions/java8'
 cask "1password"
 cask "alfred"
 cask "android-sdk"
@@ -82,7 +84,6 @@ cask 'moom'
 cask 'onyx'
 cask 'LaunchControl'
 cask 'launchrocket'
-cask 'java'
 cask 'timestamp'
 cask 'xquartz'
 cask 'keybase'
