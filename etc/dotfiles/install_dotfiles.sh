@@ -10,7 +10,7 @@ fi
 sudo -v
 
 # create tmp folder
-mkdir ../var
+mkdir var
 
 # initialise zshrc
 touch ~/.zshrc
