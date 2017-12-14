@@ -111,3 +111,4 @@ brew "tcptrace"
 brew "xz"
 brew "minisign"
 # brew "dnscrypt-proxy", restart_service: :changed # TODO: this is still failing the install process even with minisign being installed for it.
+brew "syncthing"
