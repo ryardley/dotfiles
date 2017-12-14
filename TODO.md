@@ -15,6 +15,9 @@
 2. Create the localrc file for first time users based on user input
 3. Versioning
 4. Personal config setting imprt
+5. Remove MAS install?
+6. Brew updater and upgrader
+7. files sync'n
 
 # App settings
 11. Iterm titles
