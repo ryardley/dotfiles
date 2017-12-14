@@ -31,7 +31,6 @@ cask "iterm2"
 cask "libreoffice"
 cask "malwarebytes"
 cask "mongodb-compass"
-cask "mongodbpreferencepane"
 cask "murus"
 cask "murus-menulet"
 cask "muruslogsvisualizer"
@@ -111,3 +110,4 @@ cask 'mist'
 cask 'bisq'
 cask 'caskroom/cask/resilio-sync'
 cask 'arq'
+cask 'pinegrow'
