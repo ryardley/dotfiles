@@ -1,4 +1,4 @@
-# !/usr/bin/env zsh
+# !/usr/bin/env sh
 
 SCRIPT=`realpath $0`
 SCRIPTPATH=`dirname $SCRIPT`

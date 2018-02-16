@@ -2,9 +2,10 @@
 
 tap "caskroom/cask"
 
+cask 'java'
 cask "1password"
 cask "alfred"
-cask "android-sdk"
+#cask "android-sdk" # TODO: Keeps failing to install on fresh system
 cask "android-studio"
 cask "angry-ip-scanner"
 cask "appcleaner"
@@ -30,7 +31,6 @@ cask "iterm2"
 cask "libreoffice"
 cask "malwarebytes"
 cask "mongodb-compass"
-cask "mongodbpreferencepane"
 cask "murus"
 cask "murus-menulet"
 cask "muruslogsvisualizer"
@@ -51,7 +51,6 @@ cask "spotify"
 cask "staruml"
 cask "sublime-text"
 cask "superduper"
-cask "suspicious-package"
 cask "sync"
 cask "teamviewer"
 cask 'shuttle'
@@ -77,12 +76,10 @@ cask "anyipsum"
 cask 'transmission'
 cask 'aerial'
 cask 'insomnia'
-cask 'gpgtools'
 cask 'moom'
 cask 'onyx'
 cask 'LaunchControl'
 cask 'launchrocket'
-cask 'java'
 cask 'timestamp'
 cask 'xquartz'
 cask 'keybase'
@@ -111,3 +108,6 @@ cask 'karabiner-elements'
 cask 'battery-guardian'
 cask 'mist'
 cask 'bisq'
+cask 'arq'
+cask 'pinegrow'
+cask 'resilio-sync'

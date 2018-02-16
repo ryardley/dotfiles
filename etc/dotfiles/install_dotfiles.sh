@@ -7,10 +7,10 @@ if [ ! $UPSTREAM ]; then
 fi
 
 # Ask for the administrator password upfront
-say "Please enter your admin password?"
 sudo -v
 
-# source ./etc/dotfiles/sudo_keep-alive.zsh &
+# create tmp folder
+mkdir -p var
 
 # initialise zshrc
 touch ~/.zshrc
