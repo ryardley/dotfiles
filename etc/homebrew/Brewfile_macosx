@@ -79,7 +79,6 @@ brew "lynx"
 brew "youtube-dl"
 brew "openssh"
 brew "screen"
-brew "ack"
 brew "figlet"
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
