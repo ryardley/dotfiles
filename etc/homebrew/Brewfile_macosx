@@ -1,10 +1,7 @@
 # tap's
 tap "getantibody/antibody"
-tap "homebrew/completions"
 tap "homebrew/core"
-tap "homebrew/dupes"
 tap "homebrew/services"
-tap "homebrew/versions"
 
 # OSX BrewFile
 brew 'ack'
