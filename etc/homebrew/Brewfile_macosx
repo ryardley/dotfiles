@@ -1,10 +1,7 @@
 # tap's
 tap "getantibody/antibody"
-tap "homebrew/completions"
 tap "homebrew/core"
-tap "homebrew/dupes"
 tap "homebrew/services"
-tap "homebrew/versions"
 
 # OSX BrewFile
 brew 'ack'
@@ -45,6 +42,7 @@ brew "less"
 brew "make"
 brew "mitmproxy"
 brew "mongodb", restart_service: :changed
+brew "mysql", restart_service: :changed
 brew "mtr"
 brew "nano"
 brew "perl"
@@ -81,7 +79,6 @@ brew "lynx"
 brew "youtube-dl"
 brew "openssh"
 brew "screen"
-brew "ack"
 brew "figlet"
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
@@ -111,4 +108,5 @@ brew "tcptrace"
 brew "xz"
 brew "minisign"
 # brew "dnscrypt-proxy", restart_service: :changed # TODO: this is still failing the install process even with minisign being installed for it.
-brew "syncthing"
+brew "syncthing", restart_service: :changed
+
