@@ -5,7 +5,6 @@ tap "caskroom/cask"
 cask 'java'
 cask "1password"
 cask "alfred"
-#cask "android-sdk" # TODO: Keeps failing to install on fresh system
 cask "android-studio"
 cask "angry-ip-scanner"
 cask "appcleaner"
@@ -68,7 +67,7 @@ cask "zeplin"
 cask "zoomus"
 cask "visual-studio-code"
 cask "docker"
-cask "docker-toolbox"
+# cask "docker-toolbox"
 cask "vagrant"
 cask "vagrant-manager"
 cask 'torbrowser'
@@ -113,3 +112,14 @@ cask 'pinegrow'
 cask 'resilio-sync'
 cask 'Tunnelblick'
 cask 'blockstack'
+cask 'epic'
+cask 'screenflow'
+cask 'protonmail-bridge'
+cask 'redis-app'
+cask 'Modelio'
+cask 'bonitastudiocommunity'
+cask 'archi'
+cask 'google-cloud-sdk'
+cask 'bitcoin-core'
+cask 'ngrok'
+cask 'google-drive-file-stream'
