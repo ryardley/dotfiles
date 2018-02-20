@@ -109,4 +109,11 @@ brew "xz"
 brew "minisign"
 # brew "dnscrypt-proxy", restart_service: :changed # TODO: this is still failing the install process even with minisign being installed for it.
 brew "syncthing", restart_service: :changed
-
+brew 'rdesktop'
+brew 'nethlogs'
+brew 'ntopng'
+brew 'redis'
+brew 'hping'
+brew 'bcwipe'
+brew 'rabbitmq'
+brew 'phantomjs'
