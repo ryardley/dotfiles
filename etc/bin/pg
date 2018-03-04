@@ -1,2 +1,2 @@
 #!/usr/bin/env zsh
-gw | xargs ping -n
+gw | xargs ping -n -c 10 
