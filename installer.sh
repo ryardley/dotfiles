@@ -28,9 +28,9 @@ cat ~/.ssh/id_rsa.pub
 echo ""
 echo ""
 echo "Press a key when ready..."
-read
+read press
 echo "And once more to be sure..."
-read
+read press2
 
 echo "Cloning dotfiles repo"
 git clone git@github.com:ryardley/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
