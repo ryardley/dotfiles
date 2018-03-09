@@ -5,4 +5,4 @@ if $DEBUG = true; then
 fi
 
 # Setting up editor
-export EDITOR='atom'
+export EDITOR='code'

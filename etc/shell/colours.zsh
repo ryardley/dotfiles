@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
-if $DEBUG = true; then
-  echo "Loading: LS_COLOUR"
-fi
+# if $DEBUG = true; then
+#   echo "Loading: LS_COLOUR"
+# fi
 
 # autoload colors && colors
 

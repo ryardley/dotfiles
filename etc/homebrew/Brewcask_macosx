@@ -7,65 +7,65 @@ cask 'java'
 cask "1password"
 cask "alfred"
 cask "android-studio"
-cask "angry-ip-scanner"
-cask "appcleaner"
-cask "atom"
+# cask "angry-ip-scanner"
+# cask "appcleaner"
+# cask "atom"
 cask "authy"
 cask "caffeine"
 cask "charles"
-cask "colloquy"
+# cask "colloquy"
 cask "dash"
-cask "discord"
+# cask "discord"
 cask "dropbox"
-cask "electrum"
-cask "ethereum-wallet"
+# cask "electrum"
+# cask "ethereum-wallet"
 cask "evernote"
-cask "expo-xde"
-cask "filezilla"
-cask "flux"
+# cask "expo-xde"
+# cask "filezilla"
+# cask "flux"
 cask "gitter"
 cask "google-chrome"
-cask "handbrake"
-cask "harvest"
+# cask "handbrake"
+# cask "harvest" # time tracking
 cask "iterm2"
-cask "libreoffice"
+# cask "libreoffice"
 cask "malwarebytes"
-cask "mongodb-compass"
-cask "murus"
-cask "murus-menulet"
-cask "muruslogsvisualizer"
+# cask "mongodb-compass"
+# cask "murus"
+# cask "murus-menulet"
+# cask "muruslogsvisualizer"
 cask "mysqlworkbench"
-cask "omnidisksweeper"
-cask "omnigraffle"
+# cask "omnidisksweeper"
+# cask "omnigraffle"
 cask "osxfuse"
-cask "paintbrush"
+# cask "paintbrush"
 cask "pgadmin4"
-cask "rescuetime"
-cask "robo-3t"
+# cask "rescuetime"
+# cask "robo-3t"
 cask "sketch"
 cask "skype"
 cask "slack"
-cask "smcfancontrol"
-cask "sourcetree"
+# cask "smcfancontrol"
+# cask "sourcetree"
 cask "spotify"
-cask "staruml"
-cask "sublime-text"
-cask "superduper"
-cask "sync"
-cask "teamviewer"
+# cask "staruml"
+# cask "sublime-text"
+# cask "superduper"
+# cask "sync"
+# cask "teamviewer"
 cask 'shuttle'
 cask "telegram"
 cask "time-out"
-cask "upwork"
-cask "veracrypt"
-cask "viber"
+# cask "upwork"
+# cask "veracrypt"
+# cask "viber"
 cask "virtualbox"
 cask 'virtualbox-extension-pack'
 cask "vlc"
 cask "whatsapp"
-cask "xmind"
+# cask "xmind"
 cask "zeplin"
-cask "zoomus"
+# cask "zoomus"
 cask "visual-studio-code"
 cask "docker"
 cask "vagrant"
@@ -73,17 +73,18 @@ cask "vagrant-manager"
 cask 'torbrowser'
 cask "anyipsum"
 cask 'transmission'
-cask 'aerial'
+# cask 'aerial'
 cask 'insomnia'
-cask 'moom'
-cask 'onyx'
-cask 'LaunchControl'
-cask 'launchrocket'
+# cask 'moom'
+cask 'spectacle'
+# cask 'onyx'
+# cask 'LaunchControl'
+# cask 'launchrocket' # launchd - investigate
 cask 'timestamp'
-cask 'xquartz'
-cask 'keybase'
-cask 'gpg-suite'
-cask 'diffmerge'
+# cask 'xquartz' # X11 thing
+# cask 'keybase'
+# cask 'gpg-suite'
+# cask 'diffmerge'
 cask 'qlcolorcode'
 cask 'qlstephen'
 cask 'qlmarkdown'
@@ -101,27 +102,27 @@ cask 'quicklook-pat'
 cask 'qbittorrent'
 cask 'webtorrent'
 cask 'signal'
-cask 'izip'
-cask 'karabiner-elements'
-cask 'battery-guardian'
-cask 'mist'
-cask 'bisq'
-cask 'arq'
-cask 'pinegrow'
-cask 'resilio-sync'
-cask 'Tunnelblick'
-cask 'blockstack'
-cask 'epic'
-cask 'screenflow'
-cask 'protonmail-bridge'
-cask 'redis-app'
-cask 'Modelio'
-cask 'bonitastudiocommunity'
-cask 'archi'
+# cask 'izip'
+cask 'karabiner-elements' # key mapping
+# cask 'battery-guardian'
+# cask 'mist'
+# cask 'bisq'
+# cask 'arq' #backup
+# cask 'pinegrow'
+# cask 'resilio-sync' #backup
+# cask 'Tunnelblick' #vpn client
+# cask 'blockstack' #internet for decentralized web
+# cask 'epic' #Epic Privacy Browser
+# cask 'screenflow' videoediting
+# cask 'protonmail-bridge' #encrypted email
+# cask 'redis-app'
+# cask 'Modelio' #uml
+# cask 'bonitastudiocommunity' # UI designer
+# cask 'archi' #uml
 cask 'google-cloud-sdk'
-cask 'bitcoin-core'
+# cask 'bitcoin-core'
 cask 'ngrok'
 cask 'google-drive-file-stream'
-cask 'flume'
-cask 'kindle'
-cask 'brave'
+# cask 'flume' #instagram
+# cask 'kindle'
+# cask 'brave'
