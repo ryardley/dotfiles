@@ -8,13 +8,19 @@ if [ ! -d "/Library/Developer/CommandLineTools" ]; then
   xcode-select --install
   exit 0
 fi
+
+
 echo "Command line tools installed"
 echo ""
 echo "=============================="
 echo " Generating SSH KEYS"
 echo "=============================="
 ## TODO make use dynamic input
+mkdir -p ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "contact@rudiyardley.com"
+chmod 600 ~/.ssh/id_rsa
+chmod 644 ~/.ssh/id_rsa.pub
+
 open "https://github.com"
 echo ""
 echo ""
