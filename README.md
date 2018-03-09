@@ -48,6 +48,12 @@ git clone git@github.com:[YOUR_GIT_USERNAME]/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 
+Or try the installer:
+
+```
+curl https://raw.githubusercontent.com/ryardley/dotfiles/master/installer.sh | bash
+```
+
 ## Usage
 
 Once installed on your local system you will need to be in the root of the repository. All commands are executed via the Ruby rake task system.
