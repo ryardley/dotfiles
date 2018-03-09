@@ -16,15 +16,19 @@ echo "=============================="
 echo " Generating SSH KEYS"
 echo "=============================="
 
-## TODO make use dynamic input
-ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -N ''
+if [ ! -f "$HOME/.ssh/id_rsa" ]; then
+  ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -N ''
+fi
 
 open "https://github.com"
+
 echo ""
 echo ""
 echo "Log into github and copy the following deploy key to your account on Github:"
 echo ""
+
 cat ~/.ssh/id_rsa.pub
+
 echo ""
 echo ""
 echo "Press a key when ready..."
@@ -33,6 +37,7 @@ echo "And once more to be sure..."
 read press2
 
 echo "Cloning dotfiles repo"
+
 git clone git@github.com:ryardley/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 
 echo "To install your environment type the following"
