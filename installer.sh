@@ -29,4 +29,9 @@ echo "And once more to be sure..."
 read
 
 echo "Cloning dotfiles repo"
-git clone git@github.com:ryardley/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && rake install
+git clone git@github.com:ryardley/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
+
+echo "To install your environment type the following"
+echo ""
+echo "rake install"
+echo ""
