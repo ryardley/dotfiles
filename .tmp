@@ -1,9 +1,0 @@
-#!/bin/sh
-
-if [ ! -d "/Library/Developer/CommandLineTools" ]; then
-  echo "Installing command line tools"
-  echo "============================="
-  echo "Please follow the prompts to install command line tools and try running this script again"
-  xcode-select --install
-  exit 0
-fi
