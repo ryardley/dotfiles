@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ ! -d "/Library/Developer/CommandLineTools" ]; then
   echo "=============================="
