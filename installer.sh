@@ -15,9 +15,9 @@ echo ""
 echo "=============================="
 echo " Generating SSH KEYS"
 echo "=============================="
+
 ## TODO make use dynamic input
-mkdir -p ~/.ssh
-ssh-keygen -t rsa -b 4096 -C "contact@rudiyardley.com" && chmod 600 ~/.ssh/id_rsa && chmod 644 ~/.ssh/id_rsa.pub
+ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -N ''
 
 open "https://github.com"
 echo ""
