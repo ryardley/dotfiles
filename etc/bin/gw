@@ -1,2 +1,0 @@
-#!/usr/bin/env zsh
-netstat -rn|grep default|grep en|awk ' { print substr($2,0) } '

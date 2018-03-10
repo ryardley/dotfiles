@@ -9,5 +9,6 @@ macosx:
   - macosx
   - node
   - ruby
+  - bash
 
 linux:
