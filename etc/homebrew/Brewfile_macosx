@@ -8,6 +8,8 @@ brew 'ack'
 brew 'gnu-sed'
 brew 'awk'
 brew 'ruby'
+brew 'rbenv'
+brew 'nvm'
 brew 'vim'
 brew 'imagemagick'
 brew 'unrar'
@@ -59,7 +61,7 @@ brew "watchman"
 brew "wget"
 brew "whois"
 brew "wireshark"
-brew 'node'
+# brew 'node'
 brew "yarn"
 brew "awscli"
 # brew "mas"
