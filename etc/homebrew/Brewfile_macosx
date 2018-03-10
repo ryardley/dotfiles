@@ -5,6 +5,7 @@ tap "homebrew/services"
 
 # OSX BrewFile
 brew 'ack'
+brew 'ansible'
 brew 'gnu-sed'
 brew 'awk'
 brew 'ruby'
