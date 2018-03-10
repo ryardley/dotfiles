@@ -40,7 +40,7 @@ def install_brewmas_apps(brewmas_option)
 
   puts "Installing mas apps now..."
   system('brew tap homebrew/bundle')
-  system("brew bundle --file=./etc/homebrew/Brewmas_macosx")
+  system("brew bundle --verbose --file=./etc/homebrew/Brewmas_macosx")
 end
 
 def install_brewcasks_apps(brewcask_option)
@@ -55,7 +55,7 @@ def install_brewcasks_apps(brewcask_option)
 
   puts "Installing BrewCask's now..."
   system('brew tap homebrew/bundle')
-  system("brew bundle --file=./etc/homebrew/Brewcask_#{detect_os}")
+  system("brew bundle --verbose --file=./etc/homebrew/Brewcask_#{detect_os}")
 end
 
 def install_homebrew
@@ -71,7 +71,7 @@ end
 def install_brewfiles_apps
   puts "Installing BrewFile now..."
   system('brew tap homebrew/bundle')
-  system("brew bundle --file=./etc/homebrew/BrewFile_#{detect_os}")
+  system("brew bundle --verbose --file=./etc/homebrew/BrewFile_#{detect_os}")
 end
 
 install(ARGV)

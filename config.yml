@@ -4,12 +4,10 @@ macosx:
   - dotfiles
   - homebrew # This need's to run first due to cmd dependency
   - localrc
-  - shell
   - git
   - vim
   - macosx
   - node
   - ruby
-  - zsh # Install zsh last and then swtich!
 
 linux:

@@ -123,7 +123,8 @@ cask 'karabiner-elements' # key mapping
 cask 'google-cloud-sdk'
 # cask 'bitcoin-core'
 cask 'ngrok'
-cask 'google-drive-file-stream'
+cask 'insync'
+# cask 'google-drive-file-stream'
 # cask 'flume' #instagram
 # cask 'kindle'
 # cask 'brave'
