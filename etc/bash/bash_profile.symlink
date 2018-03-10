@@ -108,8 +108,7 @@ source $(brew --prefix nvm)/nvm.sh
 # Yosemite screwing with ulimit
 ulimit -n 65536 65536
 
-# Make ansible available to shell
-source ~/client-projects/ansible/hacking/env-setup -q
+# avn
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
 # ruby for marketplacer
