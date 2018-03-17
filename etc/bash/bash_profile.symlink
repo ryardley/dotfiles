@@ -86,7 +86,7 @@ fi
 # git aliases
 alias g='git'
 alias gs='git status '
-alias gap='git add -N $(git ls-files --others --exclude-standard) && git add . && git add -p'
+alias gap='git add --intent-to-add . && git add --patch'
 alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
