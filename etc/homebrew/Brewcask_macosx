@@ -84,7 +84,7 @@ cask 'spectacle'
 cask 'timestamp'
 # cask 'xquartz' # X11 thing
 # cask 'keybase'
-# cask 'gpg-suite'
+cask 'gpg-suite'
 # cask 'diffmerge'
 cask 'qlcolorcode'
 cask 'qlstephen'
@@ -130,3 +130,4 @@ cask 'rekordbox'
 # cask 'flume' #instagram
 # cask 'kindle'
 # cask 'brave'
+cask 'midi-monitor'
